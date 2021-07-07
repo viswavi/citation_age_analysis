@@ -1,0 +1,3 @@
+[submodule "CitationIE"]
+	path = CitationIE
+	url = https://github.com/viswavi/CitationIE
