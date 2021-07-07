@@ -86,7 +86,8 @@ def make_histogram_for(year_X, citation_graph, age_mapping, max_age = 100):
     age_counter = Counter(paper_ages)
     ages = sorted(age_counter.keys())
     counts = [age_counter[age] for age in ages]
-    draw_bar_chart(ages, counts,
+    normalized_counts = [float(count) / sum(counts) for count in counts]
+    draw_bar_chart(ages, normalized_counts,
                    ylabel="Normalized frequency",
                    xlabel="Relative year of publication",
                    title=f"Relative year of publication of cited works in year {year_X}",
