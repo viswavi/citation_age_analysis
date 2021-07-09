@@ -60,9 +60,16 @@ def keyword_match(abstract):
                 'gradient',
                 'nonparametric',
                 'multitask',
-                'dialogue generation'
+                'dialogue generation',
+                'object detection',
+                'image classification',
+                'keypoint detection',
+                'facial recognition',
+                'image captioning',
+                'visual question answering',
+                'style transfer'
                 ]
-    UPPERCASE_KEYWORDS = ["MT", "RL", "AI", "ML", "NLP", "CNN", "RNN", "LSTM", "SVM", "ASR"]
+    UPPERCASE_KEYWORDS = ["MT", "RL", "AI", "ML", "NLP", "CNN", "RNN", "LSTM", "SVM", "ASR", "CRF", "VQA"]
 
     abstract_lower = abstract.lower()
     matched = False
